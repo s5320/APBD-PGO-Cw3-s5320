@@ -47,6 +47,8 @@ public class Menu {
     public String toString() {
         return nazwa + " [" + kod + "], kategoria: " + kategoria + ", cena: " + cena + " zł";
     }
-
+    public static int getLiczbaProduktow() {
+        return liczbaProduktow;
+    }
 }
 

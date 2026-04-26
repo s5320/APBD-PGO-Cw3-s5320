@@ -46,4 +46,19 @@ public class Zamowienie {
             produkty.add(produkt);
         }
     }
+    public double policzWartosc() {
+        double suma = 0;
+
+        for (Menu produkt : produkty) {
+            suma += produkt.getCena();
+        }
+
+        return suma;
+    }
+    public void oznaczJakoOplacone() {
+        this.oplacone = true;
+    }
+    public int policzLiczbeProduktow() {
+        return produkty.size();
+    }
 }
