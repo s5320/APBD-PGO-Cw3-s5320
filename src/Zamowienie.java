@@ -9,7 +9,10 @@ public class Zamowienie {
     private static int kolejnyNumer;
 
     public Zamowienie(Klient klient) {
+        this.numerZamowienia = kolejnyNumer++;
         this.klient = klient;
+        this.produkty = new ArrayList<>();
+        this.oplacone = false;
     }
 
     @Override
@@ -38,6 +41,9 @@ public class Zamowienie {
         return Objects.hashCode(numerZamowienia);
     }
 
-    public void dodajProdukt(Menu p1) {
+    public void dodajProdukt(Menu produkt) {
+        if (produkt != null) {
+            produkty.add(produkt);
+        }
     }
 }

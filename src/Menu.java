@@ -43,5 +43,10 @@ public class Menu {
     public void setKategoria(String kategoria) {
         this.kategoria = kategoria;
     }
+    @Override
+    public String toString() {
+        return nazwa + " [" + kod + "], kategoria: " + kategoria + ", cena: " + cena + " zł";
+    }
 
 }
+

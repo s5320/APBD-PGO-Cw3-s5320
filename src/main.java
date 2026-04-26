@@ -15,7 +15,7 @@ public class Main {
         System.out.println(zamowienie);
         System.out.println("Łączna wartość: " + zamowienie.policzWartosc());
         System.out.println("Liczba pozycji: " + zamowienie.policzLiczbeProduktow());
-        System.out.println("Liczba produktów utworzonych w systemie: " + ProduktMenu.getLiczbaProduktow());
+        System.out.println("Liczba produktów utworzonych w systemie: " + Menu.getLiczbaProduktow());
 
         Menu kopiaEspresso = new Menu("K-01", "Espresso duplikat", 9.0, "kawa");
         System.out.println("Czy produkty są równe? " + p1.equals(kopiaEspresso));
