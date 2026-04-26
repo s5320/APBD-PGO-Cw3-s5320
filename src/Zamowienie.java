@@ -18,9 +18,26 @@ public class Zamowienie {
         Zamowienie that = (Zamowienie) o;
         return numerZamowienia == that.numerZamowienia;
     }
+    @Override
+    public String toString() {
+        String statusPlatnosci;
 
+        if (oplacone) {
+            statusPlatnosci = "opłacone";
+        } else {
+            statusPlatnosci = "nieopłacone";
+        }
+
+        return "Zamówienie nr: " + numerZamowienia +
+                "\nKlient: " + klient +
+                "\nProdukty: " + produkty +
+                "\nStatus płatności: " + statusPlatnosci;
+    }
     @Override
     public int hashCode() {
         return Objects.hashCode(numerZamowienia);
+    }
+
+    public void dodajProdukt(Menu p1) {
     }
 }

@@ -31,7 +31,7 @@ public class Klient {
         this.email = email;
     }
 
-    public Klient(String imie, String nazisko, int idKlient, String email) {
+    public Klient(int idKlient, String imie, String nazisko,  String email) {
         this.imie = imie;
         this.nazisko = nazisko;
         this.email = email;
