@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Menu {
     private String kod;
     private String nazwa;
@@ -49,6 +51,18 @@ public class Menu {
     }
     public static int getLiczbaProduktow() {
         return liczbaProduktow;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Menu menu = (Menu) o;
+        return Objects.equals(kod, menu.kod);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(kod);
     }
 }
 
