@@ -1,4 +1,4 @@
-public class Main {
+public class main {
     public static void main(String[] args) {
         Menu p1 = new Menu("K-01", "Espresso", 9.0, "kawa");
         Menu p2 = new Menu("K-02", "Cappuccino", 13.5, "kawa");
